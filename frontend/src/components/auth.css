@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #d4d9f0, #a693d8, #8a6fc7);
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-box {
+  background: #e4e9fd;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 20px 75px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(70deg, #a683e3 50%, #8662c5 50%);
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 1.9px;
+  overflow: hidden;
+}
+
+.auth-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.auth-box h2 {
+  color: #382f2f;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-box input[type="email"],
+.auth-box input[type="password"] {
+  border: none;
+  background-color: #e4e9fd;
+  height: 45px;
+  padding: 10px;
+  border-bottom: 1px solid #382f2f;
+  font-size: 15px;
+  transition: all 0.3s;
+  color: #382f2f;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-box input::placeholder {
+  text-align: center;
+  color: #382f2f;
+  opacity: 0.7;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-bottom: 1px solid #8662c5;
+}
+
+.auth-box button[type="submit"] {
+  margin: 15px 0 20px 0;
+  padding: 12px;
+  background-color: #a683e3;
+  color: #382f2f;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.auth-box button:hover:not(:disabled) {
+  background-color: #8662c5;
+  transform: scale(1.05);
+}
+
+.auth-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #ffd4d4;
+  color: #c33;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.switch-auth {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #382f2f;
+}
+
+.switch-auth span {
+  color: #8662c5;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.switch-auth span:hover {
+  color: #a683e3;
+}
